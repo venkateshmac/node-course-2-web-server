@@ -1,6 +1,8 @@
 
 const express = require('express');
 const hbs = require('hbs');
+
+const PORT = process.env.PORT || 3000;
 //To access Express initiate, this will provide you the context of express web context
 var app = express();
 
@@ -42,8 +44,8 @@ app.get('/about' ,(request, response) => {
 });
 
 // app to listen
-app.listen(3000, () => {
-  console.log('Server is up on port 3000');
+app.listen(PORT, () => {
+  console.log(`Server is up on port ${PORT}`);
 });
 
 //Added Comments
