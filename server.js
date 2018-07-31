@@ -42,6 +42,8 @@ app.get('/about' ,(request, response) => {
 });
 
 // app to listen
-app.listen(3000);
+app.listen(3000, () => {
+  console.log('Server is up on port 3000');
+});
 
 //Added Comments
